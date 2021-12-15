@@ -16,5 +16,3 @@ function closeMenu() {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
 }
-
-console.log('hhee444e');
