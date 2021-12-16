@@ -16,3 +16,7 @@ function closeMenu() {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
 }
+
+let a = 225
+
+console.log(Math.sqrt(a));
