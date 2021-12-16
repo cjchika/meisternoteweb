@@ -1,4 +1,4 @@
-# MaisterNote Web
+# MeisterNote Web
 
 ## Clone | Online Web Notepad
 
