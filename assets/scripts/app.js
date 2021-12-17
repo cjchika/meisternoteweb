@@ -17,6 +17,14 @@ function closeMenu() {
     navMenu.classList.remove('active');
 }
 
-let a = 225
+let tabs = document.querySelectorAll('.border')
+const tabKnowledge = document.getElementById('tab-knowledge')
+const tabCommunication = document.getElementById('tab-knowledge')
+const tabDocumentation = document.getElementById('tab-documentation')
+const tabMeetings = document.getElementById('tab-meetings')
 
-console.log(Math.sqrt(a));
+const knowledgeContent = document.getElementById('tab-knoweledge-content')
+const communicationContent = document.getElementById('tab-communication-content')
+const documentationContent = document.getElementById('tab-documentation-content')
+const managementContent = document.getElementById('tab-management-content')
+

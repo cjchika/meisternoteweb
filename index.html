@@ -34,10 +34,10 @@
                     </li>
                     <div class="login-signup">
                         <li class="nav-item">
-                            <a href="#" class="nav-link-login">Log In</a>
+                            <a href="#" class="nav-link-login nav-link">Log In</a>
                         </li>
                         <li class="nav-item-signup">
-                            <a href="#" >Sign Up &nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="nav-link">Sign Up &nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
                         </li>
                     </div>
                 </ul>
@@ -127,21 +127,21 @@
                 <p>MeisterNote is the simple way to make beautiful notes. Use impressive content creation and editing capabilities, alongside intuitive collaborative functionality, to revolutionize online documentation and improve the way your team processes information. This beautiful documentation tool is the perfect solution for team knowledge bases, meeting management, 
                     internal communication, project documentation and much, much more.</p>
             </div>
-            <div >
-                <!-- <ul class="tabs horizontal">
-                    <li>
-                        <a href="#" id="tab-knowledge" class="border active"> Knowledge Bases </a>
-                    </li>
-                    <li>
-                        <a href="#" id="tab-communication" class="border"> Internal Communinication</a>
-                    </li>
-                    <li>
-                        <a href="#" id="tab-documentation" class="border"> Project Documentation </a>
-                    </li>
-                    <li>
-                        <a href="#" id="tab-meetings" class="border"> Meeting Management</a>
-                    </li>
-                </ul> -->
+            <div class="tabs-hori">
+                <div class="tabs horizontal" id="tabList">
+                        <a href="#" onclick="return false"; id="tab-knowledge" class="border active"> 
+                            <span>Knowledge Bases</span> </a>
+                    
+                        <a href="#" onclick="return false"; id="tab-communication" class="border"> 
+                            <span>Internal Communinication</span></a>
+                    
+                        <a href="#" onclick="return false"; id="tab-documentation" class="border">
+                            <span>Project Documentation</span></a>
+                
+                        <a href="#" onclick="return false"; id="tab-meetings" class="border"> 
+                            <span>Meeting Management</span></a>
+                    
+                </div>
                 
             </div>
             <div class="tabs-contents">
@@ -160,6 +160,54 @@
                             </div>
                     </div>
                 </div>
+
+                <div id="tab-communication-content">
+                    <div class="box-wrapper">
+                            <div class="text-column">
+                                <h4 class="phone-hidden">Spread the Word.</h4>
+                                <h2 class="phone-hidden">Internal Communication</h2>
+                                <p>Make your voice heard. MeisterNote enables companies to share updates and insights effortlessly, 
+                                    aligning and connecting teams without the need for inefficient email chains.
+                                </p>
+                                <a href="#">Get Started &nbsp; <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="image-row">
+                                <img src="./assets/images/main-ft-img-2.svg" alt="">
+                            </div>
+                    </div>
+                </div>
+
+                <div id="tab-documentation-content">
+                    <div class="box-wrapper">
+                            <div class="text-column">
+                                <h4 class="phone-hidden">Take Minutes, Save Hours.</h4>
+                                <h2 class="phone-hidden">Project Documentation</h2>
+                                <p>Use MeisterNote to create and organize documentation in a way that makes projects easier to manage. 
+                                    Establish a clear overview of objectives and progress with efficient, centralized project documentation.
+                                </p>
+                                <a href="#">Get Started &nbsp; <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="image-row">
+                                <img src="./assets/images/main-ft-img-3.svg" alt="">
+                            </div>
+                    </div>
+                </div>
+
+                <div id="tab-management-content">
+                    <div class="box-wrapper">
+                            <div class="text-column">
+                                <h4 class="phone-hidden">Centralize. Streamline. Organize.</h4>
+                                <h2 class="phone-hidden">Meeting Management</h2>
+                                <p>Use MeisterNote to run your meetings like a pro. You’ll leave each meeting confident that everyone has 
+                                    a record of topics discussed and decisions taken, saving time and boosting productivity.
+                                </p>
+                                <a href="#">Get Started &nbsp; <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="image-row">
+                                <img src="./assets/images/main-ft-img-4.svg" alt="">
+                            </div>
+                    </div>
+                </div>
             </div>
             <div class="more-info__cta">
                 <a href="#" class="more-info-btn btn" >Browse more &nbsp; <i class="fas fa-arrow-right"></i></a>
@@ -169,6 +217,4 @@
 
 </body>
 </html>
-
-
 
