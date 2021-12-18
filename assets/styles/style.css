@@ -505,9 +505,10 @@ section{
     }   
 }
 
-.tabs.hori{
+.tabs-hori{
     width: 100%;
     margin: auto;
+    display: none;
 }
 
 .tabs{
@@ -536,11 +537,11 @@ section{
     border-color: #0af;
 }
 
-.active{
+.visible{
     display: block;
 }
 
-.inactive{
+.invisible{
     display: none;
 }
 
@@ -556,8 +557,6 @@ section{
 .tabs a.border {
     border-top: 4px solid #edf1f2;
 }
-
-
 
 .tabs-contents{
     padding-top: 2rem;
