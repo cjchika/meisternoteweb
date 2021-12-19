@@ -83,7 +83,7 @@ a {
 .nav-item {
     margin-left: 4.5rem;
     text-align: left;
-    padding: 0.7rem 0;
+    /* padding: 0.7rem 0; */
 }
 
 .nav-link{
@@ -706,4 +706,231 @@ section{
     .border{
         font-size: 1.2rem;
     }
+}
+
+.sub-feature__container{
+    width: 100%;
+    margin: auto;
+    max-width: 1600px;
+    padding: 5rem 0;
+}
+
+.sub-feature__text h4{
+    color: rgba(61,71,77,.5);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-align: left;
+    padding: 0 25px;
+}
+
+.sub-feature__text h2{
+    color: var(--meister-grey900);
+    font-weight: 700;
+    line-height: 110%;
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 0 25px;
+    padding-bottom: 1.6rem;
+}
+
+.sub-feature__text p{
+    color: rgba(61,71,77,.5);
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 1.3rem;
+    padding: 0 25px;
+    padding-bottom: 2.5rem;
+    margin-bottom: 40px;
+    line-height: 150%;
+}
+
+.sub-ft-img img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 0 25px;
+}
+
+.sub-feature__row{
+    width: 100%;
+    margin: auto;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 25px;
+    padding-top: 4rem;
+}
+
+.sub-feature__col{
+    margin: 1rem 0;
+}
+
+.sub-feature__col h4{
+    font-size: 1.3rem;
+    color: var(--meister-grey900);
+    padding-bottom: 1rem;
+}
+
+.sub-feature__col .fas{
+    color: var(--meister-grey500);
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.sub-feature__col p{
+    color: var(--meister-grey500);
+    font-size: 1.1rem;
+    line-height: 150%;
+}
+
+.sub-feature__col .head-icon{
+    font-size: 1.5rem;
+    color: var(--meister-grey900);
+}
+
+@media(min-width:700px){
+    .sub-feature__text h4{
+        font-size: 2.2rem;
+    }
+
+    .sub-feature__text h2{
+        font-size: 3.5rem;
+    }
+
+    .sub-feature__row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .sub-feature__col{
+        margin: 0 1rem ;
+    }
+
+    .sub-feature__col h4{
+        font-size: 1.2rem;
+    }
+
+    .sub-feature__col p{
+        font-size: 1rem;
+    }
+
+    .sub-feature__col .head-icon{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width:1200px){
+    .sub-feature__text h2{
+        padding: 0 5rem;
+        padding-bottom: 1.5rem;
+    }
+    .sub-feature__text h4{
+        font-size: 2rem;
+        padding: 0 5rem;
+    }
+
+    .sub-feature__text p{
+        padding: 0 5rem;
+    }
+    
+    .sub-feature__row{
+        padding: 0 5rem;
+    }
+
+    .sub-feature__col h4{
+        font-size: 1.6rem;
+    }
+
+    .sub-feature__col .head-icon{
+        font-size: 1.8rem;
+    }
+        
+    .sub-feature__col p{
+        font-size: 1.2rem;
+    }
+}
+
+.main-cta__container{
+    width: 100%;
+    margin: auto;
+    max-width: 1600px;
+    padding: 5rem 0;
+    background-color: rgba(0,0,0,.05);
+}
+
+.main-cta__text h4{
+    color: rgba(61,71,77,.5);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.main-cta__text h2{
+    color: var(--meister-grey900);
+    font-weight: 800;
+    line-height: 110%;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.btpad{
+    margin-bottom: 2.5rem;
+}
+
+.main-cta{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 25px;
+    margin-bottom: 2.5rem;
+}
+
+.main-cta-btn{
+    font-size: 1.1rem;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    border-radius: 2.2rem;   
+    background-color: #0af;
+    box-shadow: 0 5px 10px -5px #0af;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(min-width:700px){
+    .main-cta__text h4{
+        font-size: 2.2rem;
+    }
+
+    .main-cta__text h2{
+        font-size: 3.5rem;
+    }
+
+    .main-cta-btn{
+        line-height: 4.5rem;
+        height: 4.5rem;
+        font-size: 1.5rem;
+        padding: 0 2.5rem;
+    }
+}
+
+@media(min-width:1200px){
+    .main-cta__text h4{
+        font-size: 2rem;
+    } 
 }
