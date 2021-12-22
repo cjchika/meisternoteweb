@@ -509,7 +509,7 @@ section{
 .tabs-hori{
     width: 100%;
     margin: auto;
-    display: none;
+    /* display: none; */
 }
 
 .tabs{
@@ -1834,3 +1834,6 @@ footer hr{
         padding: 0;
     }
 }
+
+/* -------- Product Mega Menu ------------ */
+
