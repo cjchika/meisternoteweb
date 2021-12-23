@@ -509,7 +509,7 @@ section{
 .tabs-hori{
     width: 100%;
     margin: auto;
-    /* display: none; */
+    display: none;
 }
 
 .tabs{
@@ -655,6 +655,9 @@ section{
 }
 
 @media(min-width:700px){
+    .tabs-hori{
+        display: block;
+    }
     .box-wrapper{
         display: flex;
         flex-direction: row;
