@@ -40,13 +40,10 @@ tabs.forEach(tab => {
             tabCommunication.classList.add('active')
             communicationContent.classList.add('visible')
             contentSection.replaceChild(knowledgeContent, communicationContent)
-            tabCommunication.className = 'border inactive'
-            communicationContent.className = 'invisible'
-            tabKnowledge.className = 'border inactive'
-            knowledgeContent.className = 'invisible'
+          
         }
     })
-})
+});
 
 
 gsap.from('.features-container', { 
