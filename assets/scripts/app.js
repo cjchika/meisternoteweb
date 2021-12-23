@@ -29,6 +29,26 @@ function closeMenu() {
     navMenu.classList.remove('active');
 }
 
+tabs.forEach(tab => {
+    tab.addEventListener("click", (e) => {
+        const tabSelect = e.currentTarget;
+        if(tabSelect === tabKnowledge) {
+            tabKnowledge.classList.add('active')
+            knowledgeContent.classList.add('visible')
+            
+        } else if(tabSelect === tabCommunication) {
+            tabCommunication.classList.add('active')
+            communicationContent.classList.add('visible')
+            contentSection.replaceChild(knowledgeContent, communicationContent)
+            tabCommunication.className = 'border inactive'
+            communicationContent.className = 'invisible'
+            tabKnowledge.className = 'border inactive'
+            knowledgeContent.className = 'invisible'
+        }
+    })
+})
+
+
 gsap.from('.features-container', { 
     scrollTrigger: {
         trigger: '.features-container',
@@ -178,22 +198,4 @@ gsap.from('.header-title2', {
     duration: 2, y: '30%', opacity: 0, ease: 'expo'
 })
 
-tabs.forEach(tab => {
-    tab.addEventListener("click", (e) => {
-        const tabSelect = e.currentTarget;
-        if(tabSelect === tabKnowledge) {
-            tabKnowledge.classList.add('active')
-            knowledgeContent.classList.add('visible')
-            
-        } else if(tabSelect === tabCommunication) {
-            tabCommunication.classList.add('active')
-            communicationContent.classList.add('visible')
-            contentSection.replaceChild(knowledgeContent, communicationContent)
-            tabCommunication.className = 'border inactive'
-            communicationContent.className = 'invisible'
-            tabKnowledge.className = 'border inactive'
-            knowledgeContent.className = 'invisible'
-        }
-    })
-})
 
