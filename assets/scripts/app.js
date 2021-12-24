@@ -25,6 +25,15 @@ const tabCommentContent = document.getElementById('tab-comment-content');
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
+const loginText = document.querySelector(".title-text .login");
+const loginForm = document.querySelector("form.login");
+const loginBtn = document.querySelector("label.login");
+const signupBtn = document.querySelector("label.signup");
+const signupLink = document.querySelector("form .signup-link a");
+const signupButton = document.getElementById('sign-up')
+const backdrop = document.getElementById('backdrop');
+const signupModal = document.getElementById('modal')
+/* ------- Nav bar --------- */
 hamburger.addEventListener('click', mobileMenu);
 
 function mobileMenu() {
@@ -41,16 +50,12 @@ function closeMenu() {
     navMenu.classList.remove('active');
 }
 
-const displayContents = () => {
-    // let spanTitle = document.querySelectorAll('.span-title')
-    //     spanTitle.forEach(span => {
-    //         if(!span.parentElement.classList.contains('active')){
-    //             span.style.display = 'none'
-    //         } else {
-    //             span.style.display = 'block'
-    //         }
-    //     })
+/* ------- Nav bar end--------- */
 
+/* ------- First Section Content Display--------- */
+
+const displayContents = () => {
+    
     tabs.forEach(tab => {
         tab.addEventListener("click", (e) => {
             let tabSelect = e.currentTarget
@@ -92,6 +97,10 @@ const displayContents = () => {
 
 displayContents()
 
+/* ------- First Section Content Display End--------- */
+
+/* ------- Section Section Content Display--------- */
+
 const displayIconContents = () => {
     iconTabs.forEach(iconTab => {
         iconTab.addEventListener('click', e => {
@@ -132,6 +141,44 @@ const displayIconContents = () => {
 }
 
 displayIconContents();
+
+/* ------- Second Section Content Display End--------- */
+
+/* ------- Signup Page --------- */
+
+signupBtn.onclick = (()=>{
+  loginForm.style.marginLeft = "-50%";
+  loginText.style.marginLeft = "-50%";
+});
+loginBtn.onclick = (()=>{
+  loginForm.style.marginLeft = "0%";
+  loginText.style.marginLeft = "0%";
+});
+signupLink.onclick = (()=>{
+  signupBtn.click();
+  return false;
+});
+
+
+const toggleBackdrop = () => {
+    backdrop.classList.toggle('visible');
+};
+
+const backdropClickEvent = () => {
+    signupModal.classList.toggle('visible');
+    toggleBackdrop()
+}
+
+const toggleSignup = () => {
+    backdropClickEvent()
+};
+
+backdrop.addEventListener('click', backdropClickEvent);
+signupButton.addEventListener('click', toggleSignup)
+
+/* ------- Signup page end--------- */
+
+/* ------- Animation --------- */
 
 gsap.from('.features-container', { 
     scrollTrigger: {

@@ -15,6 +15,7 @@
     <script src="./assets/scripts/app.js" defer></script>
 </head>
 <body>
+    <div id="backdrop"></div>
     <header class="header"  id="sticky-nav">
         <nav class="navbar">
             <div>
@@ -40,7 +41,7 @@
                             <a href="#" class="nav-link-login nav-link">Log In</a>
                         </li>
                         <li class="nav-item-signup">
-                            <a href="#" class="nav-link">Sign Up &nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" onclick="return false"; class="nav-link" id="sign-up">Sign Up &nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
                         </li>
                     </div>
                 </ul>
@@ -473,6 +474,63 @@
                 </div>
             </div>
         </section>
+
+        <!-- Signup Page -->
+        <div class="wrapper" id="modal">
+            <div class="title-text">
+               <div class="title login">
+                  Login
+               </div>
+               <div class="title signup">
+                  Signup
+               </div>
+            </div>
+            <div class="form-container">
+               <div class="slide-controls">
+                  <input type="radio" name="slide" id="login" checked>
+                  <input type="radio" name="slide" id="signup">
+                  <label for="login" class="slide login">Login</label>
+                  <label for="signup" class="slide signup">Signup</label>
+                  <div class="slider-tab"></div>
+               </div>
+               <div class="form-inner">
+                  <form action="#" class="login">
+                     <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Password" required>
+                     </div>
+                     <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                     </div>
+                     <div class="signup-link">
+                        Not a member? <a href="">Signup now</a>
+                     </div>
+                  </form>
+                  <form action="#" class="signup">
+                     <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Password" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Confirm password" required>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Signup">
+                     </div>
+                  </form>
+               </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer>
             <div class="footer-wrapper">
@@ -513,7 +571,8 @@
                     <p>© 2021 MeisterLabs</p>
                 </div>
                 <div class="subfooter">
-                    <a href="www.github.com/cjchika">Chijioke Chika</a>
+                    <a href="www.github.com/cjchika"><i class="fab fa-github"></i></a>
+                    <a href="www.twitter.com/cjchika_"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </footer>
@@ -521,4 +580,3 @@
 
 </body>
 </html>
-
