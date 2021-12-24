@@ -10,6 +10,18 @@ const communicationContent = document.getElementById('tab-communication-content'
 const documentationContent = document.getElementById('tab-documentation-content')
 const managementContent = document.getElementById('tab-management-content')
 
+const iconTabs = document.querySelectorAll('.icon');
+const tabWatching = document.getElementById('tab-watching')
+const tabSharing = document.getElementById('tab-sharing')
+const tabCollaborative = document.getElementById('tab-collaborative')
+const tabComments = document.getElementById('tab-comments')
+
+const tabWatchingContent = document.getElementById('tab-watching-content');
+const tabSharingContent = document.getElementById('tab-sharing-content');
+const tabCollaborativeContent = document.getElementById('tab-collaborative-content');
+const tabCommentContent = document.getElementById('tab-comment-content');
+
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -29,22 +41,97 @@ function closeMenu() {
     navMenu.classList.remove('active');
 }
 
-tabs.forEach(tab => {
-    tab.addEventListener("click", (e) => {
-        const tabSelect = e.currentTarget;
-        if(tabSelect === tabKnowledge) {
-            tabKnowledge.classList.add('active')
-            knowledgeContent.classList.add('visible')
-            
-        } else if(tabSelect === tabCommunication) {
-            tabCommunication.classList.add('active')
-            communicationContent.classList.add('visible')
-            contentSection.replaceChild(knowledgeContent, communicationContent)
-          
-        }
-    })
-});
+const displayContents = () => {
+    // let spanTitle = document.querySelectorAll('.span-title')
+    //     spanTitle.forEach(span => {
+    //         if(!span.parentElement.classList.contains('active')){
+    //             span.style.display = 'none'
+    //         } else {
+    //             span.style.display = 'block'
+    //         }
+    //     })
 
+    tabs.forEach(tab => {
+        tab.addEventListener("click", (e) => {
+            let tabSelect = e.currentTarget
+            if(tabSelect === tabKnowledge){
+                tabKnowledge.classList.add('active')
+                knowledgeContent.className = 'visible'
+            } else {
+                tabKnowledge.classList.remove('active')
+                knowledgeContent.className = 'invisible'
+                
+            }
+
+            if(tabSelect === tabCommunication) {
+                tabCommunication.classList.add('active')
+                communicationContent.className = 'visible'
+            } else {
+                tabCommunication.classList.remove('active')
+                communicationContent.className = 'invisible'
+            }
+
+            if(tabSelect === tabDocumentation) {
+                tabDocumentation.classList.add('active')
+                documentationContent.className = 'visible'
+            } else {
+                tabDocumentation.classList.remove('active')
+                documentationContent.className = 'invisible'
+            }
+
+            if(tabSelect === tabMeetings) {
+                tabMeetings.classList.add('active')
+                managementContent.className = 'visible'
+            } else {
+                tabMeetings.classList.remove('active')
+                managementContent.className = 'invisible'
+            }
+        })         
+    });
+}
+
+displayContents()
+
+const displayIconContents = () => {
+    iconTabs.forEach(iconTab => {
+        iconTab.addEventListener('click', e => {
+            let iconTabSelect = e.currentTarget;
+            if(iconTabSelect === tabWatching) {
+                tabWatching.classList.add('active');
+                tabWatchingContent.className = 'visible'
+            } else {
+                tabWatching.classList.remove('active')
+                tabWatchingContent.className = 'invisible'
+            }
+
+            if(iconTabSelect === tabSharing) {
+                tabSharing.classList.add('active');
+                tabSharingContent.className = 'visible'
+            } else {
+                tabSharing.classList.remove('active')
+                tabSharingContent.className = 'invisible'
+            }
+
+            if(iconTabSelect === tabCollaborative) {
+                tabCollaborative.classList.add('active');
+                tabCollaborativeContent.className = 'visible'
+            } else {
+                tabCollaborative.classList.remove('active')
+                tabCollaborativeContent.className = 'invisible'
+            }
+
+            if(iconTabSelect === tabComments) {
+                tabComments.classList.add('active');
+                tabCommentContent.className = 'visible'
+            } else {
+                tabComments.classList.remove('active')
+                tabCommentContent.className = 'invisible'
+            }
+        })
+    })
+}
+
+displayIconContents();
 
 gsap.from('.features-container', { 
     scrollTrigger: {
@@ -112,7 +199,7 @@ gsap.from('.why-use__img', {
         trigger: '.why-use__img',
         toggleActions: 'play none none none'
     }, 
-    duration: 2, y: '30%', opacity: 0, ease: 'expo'
+    duration: 2, y: '30%', opacity: 0, ease: 'power4'
 })
 
 gsap.from('.why-use__text-col', { 
@@ -120,7 +207,7 @@ gsap.from('.why-use__text-col', {
         trigger: '.why-use__text-col',
         toggleActions: 'play none none none'
     }, 
-    duration: 2, y: '50%', opacity: 0, ease: 'expo'
+    duration: 2, y: '50%', opacity: 0, ease: 'power4'
 })
 
 gsap.from('.aux-feature__col', { 
@@ -179,12 +266,12 @@ gsap.from('.extra-cta__text', {
     duration: 2, y: '50%', opacity: 0, ease: 'expo'
 })
 
-gsap.from('.row-card', { 
+gsap.from('.col-card', { 
     scrollTrigger: {
         trigger: '.row-card',
         toggleActions: 'play none none none'
     },
-    duration: 1, y: '30%', opacity: 0, ease: 'expo'
+    duration: 2, y: '30%', opacity: 0, ease: 'expo'
 })
 
 gsap.from('.header-title2', { 

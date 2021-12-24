@@ -509,7 +509,17 @@ section{
 .tabs-hori{
     width: 100%;
     margin: auto;
-    display: none;
+    display: block;
+}
+
+.tabs-hori a.active{
+    max-width: 40%
+}
+
+.tabs-hori a:not(.active){
+    overflow: hidden;
+    min-width: 30px;
+    margin: 0 10px;
 }
 
 .tabs{
