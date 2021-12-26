@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="45px" viewBox="0 0 32 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Files/Goo gleDocs</title>
+    <g id="Mara" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MN-Homepage" transform="translate(-804.000000, -7543.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(796.000000, 7541.413462)">
+                <g id="Google_Docs_icon_(2020)" transform="translate(8.000000, 2.000000)">
+                    <path d="M10.9542636,32.8598036 L0,32.8598036 L0,40.8268124 C0,42.4766277 1.33743956,43.8140673 2.98725488,43.8140673 L10.9542636,43.8140673 L10.9542636,32.8598036 Z" id="path8" fill="#00832D"></path>
+                    <path d="M10.9542636,0 L2.98725488,0 C1.33743956,0 0,1.33743956 0,2.98725488 L0,32.8598036 L10.9542636,32.8598036 L10.9542636,10.9542636 L20.9107841,10.9542636 L20.9107841,0 L10.9542636,0 Z" id="path10" fill="#FFBA00"></path>
+                    <path d="M31.8650478,32.8598036 L20.9107841,32.8598036 L20.9107841,43.8140673 L28.8777929,43.8140673 C30.5276082,43.8140673 31.8650478,42.4766277 31.8650478,40.8268124 L31.8650478,32.8598036 Z" id="path12" fill="#0066DA"></path>
+                    <polygon id="path14" fill="#00AC47" points="20.9107841 32.8598036 10.9542636 32.8598036 10.9542636 43.8140673 20.9107841 43.8140673"></polygon>
+                    <polygon id="path16" fill="#2684FC" points="20.9107841 10.9542636 20.9107841 32.8598036 31.8650478 32.8598036 31.8650478 10.9542636"></polygon>
+                    <polygon id="path18" fill="#EA4335" points="20.9107841 0 20.9107841 10.9542636 31.8650478 10.9542636"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
