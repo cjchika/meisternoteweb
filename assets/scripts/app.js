@@ -31,7 +31,7 @@ const loginBtn = document.querySelector("label.login");
 const signupBtn = document.querySelector("label.signup");
 const signupLink = document.querySelector("form .signup-link a");
 const signupButton = document.getElementById('sign-up')
-const loginButton = document.getElementById('login')
+const loginButton = document.getElementById('log-in')
 const backdrop = document.getElementById('backdrop');
 const signupModal = document.getElementById('modal')
 /* ------- Nav bar --------- */
@@ -173,6 +173,7 @@ const backdropClickEvent = () => {
 const toggleSignup = () => {
     backdropClickEvent()
 };
+
 
 
 backdrop.addEventListener('click', backdropClickEvent);
