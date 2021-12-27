@@ -34,6 +34,7 @@ const signupButton = document.getElementById('sign-up')
 const loginButton = document.getElementById('log-in')
 const backdrop = document.getElementById('backdrop');
 const signupModal = document.getElementById('modal')
+
 /* ------- Nav bar --------- */
 hamburger.addEventListener('click', mobileMenu);
 

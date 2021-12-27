@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meisternote | Online Web Notepad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./pricing.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js" defer></script>
+    <script src="../assets/scripts/app.js" defer></script>
+    <script src="./pricing.js" defer></script>
+</head>
+<body>
+    <div id="backdrop"></div>
+    <header class="header"  id="sticky-nav">
+        <nav class="navbar">
+            <div>
+                <a href="../index.html" class="nav-logo"><img src="../assets/images/logo.svg" alt=""></a>
+            </div>
+            <div >
+                <ul class="nav-menu">
+                    <li class="nav-item" id="btn-product-dropdown">
+                        <a href="../product/index.html" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../solution/index.html" class="nav-link">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Sales</a>
+                    </li>
+                    <div class="login-signup">
+                        <li class="nav-item">
+                            <a href="#" onclick="return false"; class="nav-link-login nav-link" id="log-in">Log In</a>
+                        </li>
+                        <li class="nav-item-signup">
+                            <a href="#" onclick="return false"; class="nav-link" id="sign-up">Sign Up &nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+        
+    <main>
+        <!-- Banner Section -->
+        <section>
+            <div class="container">
+                <div class="header-title">
+                    <h1>MesiterNote <span>Pricing</span></h1>
+                </div>
+                <h1 class="subheading">Find out which plan is right for you</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="packages-container">
+                <div class="plan-wrapper">
+                    <div class="plan">
+                        <div class="plan-main">
+                            <img class="w-64 h-64" src="./images/basic.svg" alt="">
+                            <h2 class="hyphenation">Basic</h2>
+                            <p class="description">For a free-to-use, intuitive online documentation experience</p>
+                            <div class="price justify-center">
+                                <span class="monthly">FREE</span>
+                            </div>
+                            <span class="c-light mt-5">&nbsp;</span>
+                        </div>
+                        <div class="plan-footer">
+                            <div class="justify-center">
+                                <a class="button-link pricing-link" id="plan-signup" onclick="return false"; href="#">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-20 mb-20">
+                        <span class="ws-nowrap">* all prices per use when paid annually</span>
+                    </div>
+                    <div class="plan_compare grown mt-40">
+                        <div class="plan_compare action ta-left">
+                            <p class="mb-25">
+                                <strong>Basic includes</strong>
+                                <br>
+                                Beautiful documentation with:
+                            </p>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Up to 5 workspaces</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Unlimited notes</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Note customization</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">7-day version history</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">File embeds up to 20 MB per file</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Email support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="plan-wrapper">
+                    <div class="plan">
+                        <div class="plan-main">
+                            <img class="w-64 h-64" src="./images/pro.svg" alt="">
+                            <div class="ui-badge">
+                                <p>Best Value</p>
+                            </div>
+                            <h2 class="hyphenation">Pro</h2>
+                            <p class="description">For teams who want to work on documentation together in one place</p>
+                            <div class="price justify-center">
+                                <span class="monthly">$2.99</span>
+                            </div>
+                            <span class="c-light mt-5">per month</span>
+                        </div>
+                        <div class="plan-footer">
+                            <div class="justify-center">
+                                <a class="pricing-link button-green width-100" href="../index.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-20 mb-20">
+                        <span class="ws-nowrap" style="visibility: hidden;">* all prices per use when paid annually</span>
+                    </div>
+                    <div class="plan_compare grown mt-40">
+                        <div class="plan_compare action ta-left">
+                            <p class="mb-25">
+                                <strong>Pro includes</strong>
+                                <br>
+                                Everything in Basic, and:
+                            </p>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Unlimited workspaces</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Multiple team members</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">30-day version history</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">File embeds up to 200 MB per file</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Admin account</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-wrapper">
+                    <div class="plan">
+                        <div class="plan-main">
+                            <img class="w-64 h-64" src="./images/business.svg" alt="">
+                            <h2 class="hyphenation">Business</h2>
+                            <p class="description">For advanced group sharing & sophisticated permissions</p>
+                            <div class="price justify-center">
+                                <span class="monthly">$6.99</span>
+                            </div>
+                            <span class="c-light mt-5">per month</span>
+                        </div>
+                        <div class="plan-footer">
+                            <div class="justify-center">
+                                <a class="pricing-link button-green width-100" href="../index.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-20 mb-20">
+                        
+                        <a class="ws-nowrap"href="../pricing/index.html">Request a Trial</a>
+                    </div>
+                    <div class="plan_compare grown mt-40">
+                        <div class="plan_compare action ta-left">
+                            <p class="mb-25">
+                                <strong>Business includes</strong>
+                                <br>
+                                Everything in Pro, and:
+                            </p>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Roles and permissions</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Collaborative workspaces</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Unlimited version history</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Advanced securtiy settings</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Priority email & phone support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-wrapper">
+                    <div class="plan">
+                        <div class="plan-main">
+                            <img class="w-64 h-64" src="./images/enterprise.svg" alt="">
+                            <h2 class="hyphenation">Enterprise</h2>
+                            <p class="description">Individually tailored to your company's needs.</p>
+                            <div class="price justify-center">
+                                <span class="monthly">Custom</span>
+                            </div>
+                            <span class="c-light mt-5">&nbsp;</span>
+                        </div>
+                        <div class="plan-footer">
+                            <div class="justify-center">
+                                <a class="pricing-link button-blue width-100" href="../index.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-20 mb-20">
+                        <span class="ws-nowrap" style="visibility: hidden;">* all prices per use when paid annually</span>
+                    </div>
+                    <div class="plan_compare grown mt-40">
+                        <div class="plan_compare action ta-left">
+                            <p class="mb-25">
+                                <strong>Enterprise includes</strong>
+                                <br>
+                                Everything in Business, and:
+                            </p>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Unlimited workspaces</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Tailored pricing offer</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Dedicated account manager</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Personalized onboarding assistance</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">Custom security review</span>
+                            </div>
+                            <div class="item mb-10 align-items-start">
+                                <img class="s-14 mr-10" src="./images/check.svg" alt="">
+                                <span class="feature tooltip">SAML Single Sign-On</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signup Page -->
+        <div class="wrapper" id="modal">
+            <div class="title-text">
+               <div class="title login">
+                  Login
+               </div>
+               <div class="title signup">
+                  Signup
+               </div>
+            </div>
+            <div class="form-container">
+               <div class="slide-controls">
+                  <input type="radio" name="slide" id="login" checked>
+                  <input type="radio" name="slide" id="signup">
+                  <label for="login" class="slide login">Login</label>
+                  <label for="signup" class="slide signup">Signup</label>
+                  <div class="slider-tab"></div>
+               </div>
+               <div class="form-inner">
+                  <form action="#" class="login">
+                     <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Password" required>
+                     </div>
+                     <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                     </div>
+                     <div class="signup-link">
+                        Not a member? <a href="">Signup now</a>
+                     </div>
+                  </form>
+                  <form action="#" class="signup">
+                     <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Password" required>
+                     </div>
+                     <div class="field">
+                        <input type="password" placeholder="Confirm password" required>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Signup">
+                     </div>
+                  </form>
+               </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <hr>
+            <div class="sitemap">
+                <div class="children">
+                    <h3>Meisternote</h3>
+                    <a href="#" class="phone-hidden">Features</a>
+                    <a href="#" class="phone-hidden">Use Cases</a>
+                    <a href="#" class="phone-hidden">Sign Up</a>
+                    <a href="#" class="phone-hidden">What's New</a>
+                </div>
+                <div class="children">
+                    <h3>About Us</h3>
+                    <a href="#" class="phone-hidden">Company</a>
+                    <a href="#" class="phone-hidden">Career</a>
+                    <a href="#" class="phone-hidden">Press</a>
+                </div>
+                <div class="children">
+                    <h3>Support</h3>
+                    <a href="#" class="phone-hidden">Help Centre</a>
+                    <a href="#" class="phone-hidden">Tutorial Videos</a>
+                    <a href="#" class="phone-hidden">FAQ</a>
+                </div>
+                <div class="children">
+                    <h3>Useful Links</h3>
+                    <a href="#" class="phone-hidden">MindMeister</a>
+                    <a href="#" class="phone-hidden">MeisterTask</a>
+                    <a href="#" class="phone-hidden">Blog</a>
+                    <a href="#" class="phone-hidden">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-wrapper">
+            <div class="copyright-container">
+                <img src="../assets/images/footer-img.svg" alt="">
+                <p>© 2021 MeisterLabs</p>
+            </div>
+            <div class="subfooter">
+                <a href="www.github.com/cjchika"><i class="fab fa-github"></i></a>
+                <a href="www.twitter.com/cjchika_"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
