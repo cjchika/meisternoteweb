@@ -205,10 +205,6 @@
     /* padding: 0 5rem; */
 }
 
-.phone-hidden{
-    display: none;
-}
-
 .box-wrapper{
     display: flex;
     flex-direction: column;
@@ -262,33 +258,6 @@
     width: 100%;
 }
 
-.more-info__cta{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px;
-    margin: auto;
-    padding: 0 25px;
-    margin-bottom: 2.5rem;
-}
-
-.more-info-btn{
-    font-size: 1.1rem;
-    height: 3rem;
-    line-height: 3rem;
-    padding: 0 1.5rem;
-    border-radius: 2.2rem;   
-    background-color: #0af;
-    box-shadow: 0 5px 10px -5px #0af;
-    color: #fff;
-    font-weight: 600;
-}
-
-.more-info-btn:hover, .more-info-btn a:hover{
-    box-shadow: 0 10px 30px -5px #0af;
-    color: #fff;
-}
 
 @media(min-width:700px){
     .tabs-hori{

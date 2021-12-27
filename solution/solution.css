@@ -68,6 +68,7 @@
     font-size: 1.3rem;
     margin-bottom: 40px;
 }
+
 .why-use__img img{
     height: auto;
     width: 100%;
@@ -79,7 +80,7 @@
 }
 
 .list-check li{
-    background-image: url(./images/CheckmarkCircle.svg);
+    background-image: url(../product/images/CheckmarkCircle.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 2rem 2rem;
@@ -88,6 +89,9 @@
 }
 
 @media(min-width:700px){
+    .why-use__container{
+        padding-bottom: 2rem;
+    }
     .why-use__col{
         display: flex;
         flex-direction: row;
@@ -126,6 +130,13 @@
         /* padding: 3rem; */
     }
 
+    .padded-left{
+        padding-left: 2rem;
+    }
+    .padded-right{
+        padding-right: 2rem;
+    }
+
     .why-use__text-col h2{
         font-size: 3.7rem;
     }
@@ -134,7 +145,41 @@
 @media(min-width:1200px){
     .why-use__container{
         padding: 5rem 5rem;
+        padding-bottom: 2rem;
     }
+
+    .why-use__text-col h2{
+        font-size: 4.5rem;
+    }
+
+    .why-use__text-col p{
+        font-weight: 500;
+    }
+}
+
+.more-info_cta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 2.5rem;
+}
+
+.more-info_btn{
+    font-size: 1.2rem;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    border-radius: 2.2rem;   
+    background-color: #0af;
+    box-shadow: 0 5px 10px -5px #0af;
+    color: #fff;
+    font-weight: 600;
+}
+
+.more-info-btn:hover, .more-info-btn a:hover{
+    box-shadow: 0 10px 30px -5px #0af;
+    color: #fff;
 }
 
 .extra-feature__container{
@@ -294,26 +339,6 @@
     }
 }
 
-.more-info__cta{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px;
-    margin: auto;
-    padding: 0 25px;
-    margin-bottom: 2.5rem;
-    margin-top: 3.1rem;
-}
-
-.more-info-btn{
-    font-size: 1.3rem;
-    height: 3rem;
-    line-height: 3rem;  
-    color: #0af;
-    font-weight: 600;
-}
-
 .extra-cta__container{
     width: 100%;
     margin: auto;
@@ -383,31 +408,4 @@
     .extra-cta__text h4{
         font-size: 2rem;
     } 
-}
-.more-info__cta{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px;
-    margin: auto;
-    padding: 0 25px;
-    margin-bottom: 2.5rem;
-}
-
-.more-info-btn{
-    font-size: 1.2rem;
-    height: 3rem;
-    line-height: 3rem;
-    padding: 0 1.5rem;
-    border-radius: 2.2rem;   
-    background-color: #0af;
-    box-shadow: 0 5px 10px -5px #0af;
-    color: #fff;
-    font-weight: 600;
-}
-
-.more-info-btn:hover, .more-info-btn a:hover{
-    box-shadow: 0 10px 30px -5px #0af;
-    color: #fff;
 }
