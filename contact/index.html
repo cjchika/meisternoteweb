@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meisternote | Online Web Notepad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./contact.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js" defer></script>
+    <script src="../assets/scripts/app.js" defer></script>
+</head>
+<body>
+    <div id="backdrop"></div>
+    <header class="header"  id="sticky-nav">
+        <nav class="navbar">
+            <div>
+                <a href="../index.html" class="nav-logo"><img src="../assets/images/logo.svg" alt=""></a>
+            </div>
+            <div >
+                <ul class="nav-menu">
+                    <li class="nav-item" id="btn-product-dropdown">
+                        <a href="../product/index.html" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../solution/index.html" class="nav-link">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../pricing/index.html" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Contact Sales</a>
+                    </li>
+                    <div class="login-signup">
+                        <li class="nav-item">
+                            <a href="#" onclick="return false"; class="nav-link-login nav-link" id="log-in">Log In</a>
+                        </li>
+                        <li class="nav-item-signup">
+                            <a href="#" onclick="return false"; class="nav-link" id="sign-up">Sign Up &nbsp;&nbsp; <i class="fas fa-arrow-right"></i></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+        
+    <main>
+        <!-- Banner Section -->
+        <section class="why-use__container">
+            <div class="why-use__col">
+                <div class="why-use__text-col">
+                    <h4>Contact our Sales Team</h4>
+                    <h2>Get in Touch.</h2>
+                    <p>Tell us how we can help you succeed. We will:
+                    </p>
+                    <ul class="list-check">
+                        <li>Introduce you to our products and explain their value to your business.</li>
+                        <li>Share MeisterNote success stories from other companies in your industry.</li>
+                        <li>Create the optimal price plan for your requirements and expectations.</li>
+                    </ul>
+                </div>
+                <form>      
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                    <input type="submit" value="SUBMIT"/>
+                </form>
+            </div>
+        </section>
+        <div class="wave">
+            <img src="../assets/images/wave.svg" alt="">
+        </div>
+
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <hr>
+            <div class="sitemap">
+                <div class="children">
+                    <h3>Meisternote</h3>
+                    <a href="#" class="phone-hidden">Features</a>
+                    <a href="#" class="phone-hidden">Use Cases</a>
+                    <a href="#" class="phone-hidden">Sign Up</a>
+                    <a href="#" class="phone-hidden">What's New</a>
+                </div>
+                <div class="children">
+                    <h3>About Us</h3>
+                    <a href="#" class="phone-hidden">Company</a>
+                    <a href="#" class="phone-hidden">Career</a>
+                    <a href="#" class="phone-hidden">Press</a>
+                </div>
+                <div class="children">
+                    <h3>Support</h3>
+                    <a href="#" class="phone-hidden">Help Centre</a>
+                    <a href="#" class="phone-hidden">Tutorial Videos</a>
+                    <a href="#" class="phone-hidden">FAQ</a>
+                </div>
+                <div class="children">
+                    <h3>Useful Links</h3>
+                    <a href="#" class="phone-hidden">MindMeister</a>
+                    <a href="#" class="phone-hidden">MeisterTask</a>
+                    <a href="#" class="phone-hidden">Blog</a>
+                    <a href="#" class="phone-hidden">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-wrapper">
+            <div class="copyright-container">
+                <img src="../assets/images/footer-img.svg" alt="">
+                <p>© 2021 MeisterLabs</p>
+            </div>
+            <div class="subfooter">
+                <a href="www.github.com/cjchika"><i class="fab fa-github"></i></a>
+                <a href="www.twitter.com/cjchika_"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
